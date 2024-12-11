@@ -1,0 +1,271 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bahn Schrift Light, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 50px; /* To avoid overlap with fixed navbar */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+img{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Home Section */
+#home {
+    background: url('C:\Users\BAKOONAHINDA\Downloads\savant.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    position: sticky;
+    height: 60vh;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+6
+#home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#home button a {
+    background-color: #007bff;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#home button a:hover {
+    background-color: #0056b3;
+}
+
+/* Services Section */
+#services {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#contact i {
+    margin-right: 10px;
+    color: #007bff;
+}
+/* Quotes Section */
+#quotes {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#quotes h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.quote-item {
+    background-color: #fff;
+    border-left: 5px solid #007bff; /* Blue left border for style */
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 600px;
+    width: 80%;
+    text-align: left;
+    font-style: italic;
+}
+
+blockquote {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.quote-author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+
+/* Location Section */
+#location {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#location iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 18px;
+    }
+}
